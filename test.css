@@ -70,7 +70,7 @@
 
 /* HEADER */
     .bgimage {
-        background-image:url(/img/bakgrund-laptop.jpg);
+        background-image:url(img/bakgrund-laptop.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
