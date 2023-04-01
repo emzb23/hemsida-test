@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL-TEST</title>
+    <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="test.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div class="bgimage">
+
+    <!-- RESPONSIVE NAV -->
+    <nav class="navbar">
+        <a id="home" href="#">TEST</a>
+        <span class="navbar-toggle" id="js-navbar-toggle">&equiv;</span>
+        <ul class="main-nav" id="js-menu">
+            <li><a class="nav-links" href="#">Start</a></li>
+            <li><a class="nav-links" href="#section1">HTML-guide</a></li>
+            <li><a class="nav-links" href="#">Annat</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+
+        <div id="div-container">
+            <div class="header-container">
+                <header><h1>HTML för alla</h1></header>
+                <span>Välkommen till Emelies fantastiska hemsida, nu med HTML-handledning för nybörjare!</span>
+            </div>
+            
+            <div class="info-card-container2">
+                <div class="info-card2">
+                    <h4>GÖR EN EGEN HEMSIDA!</h4>
+                    <p>En nybörjarhandledning till HTML</p>
+                </div>
+                <div class="info-card2">
+                    <h4>DATORTIPS</h4>
+                    <p>Blir inte arg, datorn gör sitt bästa!</p>
+                </div>
+                <div class="info-card2">
+                    <h4>BLOGG</h4>
+                    <p>Min personliga blogg om allt möjligt.</p>
+                </div>
+        </div>
+        </div>
+
+
+    <main>
+        
+        <article class="fullscreen-section" id="section1">
+            <h2 class="section-header">Ordbajs</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quo numquam enim doloremque id, fuga officia nihil soluta assumenda eum reprehenderit quaerat sit corrupti illo quam, placeat cum, saepe impedit.</p>
+            <h3>Mer ordbajs</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eos, at ratione cum aspernatur quas, magni officia dolorem a temporibus corrupti maxime beatae, et consectetur quibusdam voluptatibus nisi expedita sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quae delectus totam, ipsam tenetur aut perferendis saepe eum quaerat consequatur deleniti pariatur a nam sequi facilis odit impedit et cumque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate numquam optio, unde praesentium nihil assumenda, est dolores repudiandae eveniet doloremque enim rem distinctio alias libero nesciunt, ipsum mollitia repellendus dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi placeat vitae nobis, reiciendis molestias ab, architecto vel modi voluptatem, corporis sapiente eos aliquid non fugiat magni voluptates ratione delectus ullam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur ratione non molestiae quidem modi veritatis voluptas fugiat dicta numquam? Eos quasi sed aspernatur tenetur odit sapiente quidem harum laborum quo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni eum doloremque at quod, blanditiis molestias optio similique, libero facilis voluptate veritatis amet fugiat maxime nemo sed quo? Delectus, id.</p>
+            <h3>Men hur gör man nu allt ordbajs då?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quis culpa, aspernatur nulla cumque earum assumenda modi accusamus aperiam praesentium. Illo impedit incidunt dolor nam quo eveniet voluptas velit id.</p>
+            <h3>Är ordbajs lagligt?</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore molestiae laborum iusto quas expedita ab. Perferendis aperiam eum porro hic, ipsa dignissimos officiis praesentium, ut tempora natus velit fugit provident. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia aut dicta atque fuga minima explicabo eius nobis similique, enim nesciunt laudantium consequuntur cumque! Quam sed libero, totam impedit exercitationem illo!</p>
+            <h3>Kan man tävla i ordbajs?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maxime obcaecati itaque assumenda consectetur incidunt, nobis impedit dicta molestias nihil vitae, numquam aspernatur distinctio hic. Natus nulla ipsam recusandae ullam.</p>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/74pVkz4icM2XAGV1jBQS99?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </article>
+    </main>
+    
+    <!-- SCRIPT -->
+    <script>
+        let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-navbar-toggle");
+        
+        navBarToggle.addEventListener("click", function() {
+          mainNav.classList.toggle("active");
+        });
+    </script>
+<footer>
+
+    <section>
+        <h3 id="footer-h3">Info om mig</h3>
+        <p>Jag heter Emelie och deltar i daglig verksamhet på Wigénshuset. Eftersom jag saknar något liv så hänger jag mina dagar till att koda hemsidor. Detta är mitt första projekt så ha lite tålamod och sänk standarden till minus.</p>
+    </section>
+
+    <ul>
+        <h3>Länkar</h3>
+        <li><a href="https://xn--dagligverksamhettrans-c3b.se/">Dagliga verksamhetens hemsida</a></li>
+        <li><a href="https://www.w3schools.com/html/default.asp">Mer info om HTML</a></li>
+        <li><a href="https://xn--dagligverksamhettrans-c3b.se/solsidan-3/">Solsidan</a></li>
+    </ul>
+
+</footer>
+
+<div id="copr">
+    © 2023
+</div>
+</div>
+</body>
+</html>
