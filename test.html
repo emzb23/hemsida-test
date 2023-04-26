@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL-TEST</title>
+    <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="test.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="bgimage">
+
+    <!-- RESPONSIVE NAV -->
+    <nav class="navbar">
+        <img id="homeicon" src="../img/homeicon.png" style="height: 35px" alt="hem">
+        <span class="navbar-toggle" id="js-navbar-toggle">&equiv;</span>
+        <ul class="main-nav" id="js-menu">
+            <li><a class="nav-links" href="#">Start</a></li>
+            <li><a class="nav-links" href="#section1">HTML intro</a></li>
+            <li><a class="nav-links" href="#section2">Grunder</a></li>
+            <li><a class="nav-links" href="#section3">Text</a></li>
+            <li><a class="nav-links" href="#section4">CSS</a></li>
+            <li><a class="nav-links" href="#section5">Färger</a></li>
+            <li><a class="nav-links" href="#section6">Typsnitt</a></li>
+            <li><a class="nav-links" href="#section7">Länkar</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+
+    <div id="div-container">
+        <div class="header-container">
+            <header><h1>HTML för alla</h1></header>
+            <span>Välkommen till Emelies fantastiska hemsida, nu med HTML-handledning för nybörjare!</span>
+        </div>
+        
+        <div class="info-card-container2">
+            <div class="info-card2">
+                <h4>GÖR EN EGEN HEMSIDA!</h4>
+                <p>En nybörjarhandledning till HTML.</p>
+            </div>
+            <div class="info-card2">
+                <h4>DATORTIPS</h4>
+                <p>Blir inte arg, datorn gör sitt bästa!</p>
+            </div>
+            <div class="info-card2">
+                <h4>BLOGG</h4>
+                <p>Min personliga blogg om allt möjligt.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        
+    <!-- INTRO -->
+        <article class="fullscreen-section" id="section1">
+            <h2 class="section-header">Intro till HTML</h2>
+            
+            <p>
+                Välkommen in i internetlianernas värld. HTML står för Hyper Text Markup Language och används för att strukturera hemsidor på ett sätt som både människor och datorer kan komma överens om. 
+                
+                Genom detta språk kan vi förklara hur webbläsaren ska tyda text vi skriver.
+                
+                I princip allt du gör online är baserat på HTML på ett eller annat sätt. 
+            </p>
+
+            <h3>Historia</h3>
+            <p>
+                Efter att en forskare vid namn Tim Berners-Lee skapade den första hemsidan 1989 kunde man äntligen länka ihop hemsidor med andra och när internet blev tillgängligt för allmänheten i mitten av nittiotalet exploderade intresset för att skapa egna hemsidor. 1998 bestämde regeringen att folk skulle sluta låna hem och skabba ner arbetsplatsens datorer. Efter att i gymnasiet ha praktiserat på ett företag som städade leasade datorer förstår jag dem. Nu skulle man istället ha en dator hemma. Under de tre kommande åren adopteras nästan en miljon datorer. Självklart missbrukas detta genom kryphål, men det är kanske tack vare detta halva landets befolkning använde nätet vid mellenieskiftet.
+            </p>
+    
+            <h3>Webbläsare, textredigerare och filtyper</h3>
+            <p>
+                Mycket av det vi ska arbeta med nu kommer ligga lokalt, alltså bara på din dator. I demonstrativt syft kommer jag skriva själva koden för hemsidan i en så kallad textredigerare, t.ex. Notepad++ som ska finnas färdiga på våra datorer här på Mediagruppen. 
+            </p>
+
+            <div class="repet">
+                <h5>I denna kursen ska vi lära oss:</h5>
+                <ul>
+                    <li>Om olika webbläsare och textredigerare</li>
+                    <li>Att skriva en enkel, lokal hemsida</li>
+                    <li>Färglägga och länka</li>
+                </ul>
+            </div>
+        </article>
+
+<!-- SECTION 2 -->
+    <article class="fullscreen-section" id="section2">
+
+        <h2 class="section-header">Grunder</h2>
+        <p>
+            Ställ fram en kopp kaffe och inta positionen ”datanörd med gorillanacke”, vi ska börja med HTML! I första lektionen ska vi göra en enkel hemsida med en rubrik och två paragrafer (textstycken). Vid det här laget borde du sitta redo med en textredigerare, t.ex. Notepad++ (som redan ska finnas på våra datorer här på Mediagruppen) eller en som finns online, t.ex. <a href="https://codepen.io/pen/" target="_blank" rel="noreferrer noopener">Codepen</a> (öppnas i en ny tabb). Det är sistnämnda jag kommer använda för demo.
+        </p>
+
+        <h3>Element, taggar och innehåll</h3>
+        <p>HTML består av så kallade <strong>element</strong> som datorer kan läsa, inom dessa element har vi <strong>taggar</strong> fyllda med <strong>innehåll</strong>. De flesta taggar behöver även en sluttagg som föregås av ett snedtreck, men det finns undantag som <span class="code">&lt;!DOCTYPE&gt;</span>.</p>
+
+        <h3>!DOCTYPE och html</h3>
+        <p>De mest grundläggande elementen inom HTML förutom doctype är html, title samt body. <span class="code">&lt;html&gt;</span> är själva grunden på hemsidan, </p>
+
+        <h3>Huvud och kropp</h3>
+        <p><span class="code">&lt;title&gt;</span> ger sidan ett namn och <span class="code">&lt;body&gt;</span> är själva "kroppen" där innehåll som vi människor kan se ska vara. Innehållet kan bland annat bestå av text, bilder, videor och länkar men vi börjar med en rubrik följt av en paragraf med text.</p>
+
+        <div class="repet">
+            <ul>
+                <li>Element består av (oftast) två taggar med innehåll</li>
+                <li>Allt förutom DOCTYPE ska vara INOM html.</li>
+                <li>Prova att lägga till en ny paragraf och ändra titeln på hemsidan till något roligare.</li>
+            </ul>
+        </div>
+
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qBJZWqg" data-user="emzb23" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/emzb23/pen/qBJZWqg">
+            Untitled</a> by emzb23 (<a href="https://codepen.io/emzb23">@emzb23</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+        
+    </article>
+
+<!-- TEXT -->
+    <article class="fullscreen-section" id="section3">
+        <h2 class="section-header">Rubriker och textstycken</h2>
+        <p>
+            Nu när vi har en färdig sida kanske det är roligt att faktiskt fylla den med innehåll? Rubriker och textstycken eller paragrafer är de mest grundläggande delarna när det gäller text. 
+        </p>
+
+        <h3>Rubriker</h3>
+        <p>
+            Som ni kanske vet så heter rubrik "header" på engelska, vilket på HTML förkortas till ett "h". 
+            
+            Storleken bestäms sedan med en siffra mellan 1 och 6 där <span class="code">&lt;h1&gt;</span> ger störst och viktigast rubrik medans <span class="code">&lt;h6&gt;</span> ger en liten, mindre viktig rubrik. Precis som i ett vanligt Word-dokument kanske du vill ha en huvudrubrik längst upp och sedan en underrubrik med ännu en underrubrik?
+        </p>
+
+
+        <h3>Paragrafer</h3>
+        <p>
+            Engelska ordet för textstycke är "paragraph" vilket förkortas till <span class="code">&lt;p&gt;</span> i HTML. Ordet paragraf finns på svenska och även om det låter lite skitnödigt kommer jag härdanefter använda det.
+        </p>
+
+        <h3>Mellanrum och avskiljare</h3>
+        <p>Tänk på att paragrafer struntar i om du har massa mellanrum i texten. Vill du ha ett avbrott så kan du antingen göra en ny paragraf eller använda <span class="code">&lt;br&gt;</span>, vilket ger en ny rad. Vill du istället ha en snajsig linje mellan element fixar man det med <span class="code">&lt;hr&gt;</span> vilket kommer här nedan!</p>
+
+        <hr>
+
+        <p>Men eftersom paragrafer inte har något mellanrum kan det bli lite krångligt om du vill ha t.ex. en dikt? Med <span class="code">&lt;pre&gt;</span> kan du skapa ett textstycke som bibehåller mellanrum.</p>
+
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YzJwmGv" data-user="emzb23" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/emzb23/pen/YzJwmGv">
+            Grund</a> by emzb23 (<a href="https://codepen.io/emzb23">@emzb23</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+    </article>
+
+<!-- CSS -->
+    <article class="fullscreen-section" id="section4">
+        <h2 class="section-header">CSS</h2>
+        <p>
+            Nu är själva grunden på sidan klar men tja... Den ser ju rätt så sunkig ut. Lite färg vore väl trevligt? Kanske ett annat typsnitt? För detta ska vi använda HTML:s kusin CSS! Vid formella tillfällen tilltalas denne som Cascading Style Sheets - eller stilmall på svenska.  Med CSS kan man ändra allt från färger till layout och även göra animationer och jag kan lugnt säga att det CSS på denna hemsidan har tagit mer tid än något annat. Men vi ska börja lite lugnt med färger, bakgrund och typsnitt.
+        </p>
+
+    <h3>Att parkera CSS inom &lt;head&gt;</h3>
+        <p>
+            Precis som <span class="code">&lt;title&gt;</span> med så ska CSS bo i <span class="code">&lt;head&gt;</span> men när det blir lite för långt så kan man flytta det till ett separat dokument som man sedan länkar till. 
+        </p>
+
+        <h3>Selector, property, value</h3>
+        <p>När man grejar runt i CSS ser det lite annorlunda ut än i vanlig HTML. Det kan kännas lite skräckinjagande men oroa dig inte, det är nästan ännu lättare.</p>
+
+        <ol>
+            <li>Välj vilket element du vill pilla på, här tar vi en p.</li>
+            <li>Klottra dit två måsvingar/bananskal {} med ctrl+alt+7 respektive ctrl+alt+0. Det är inom dessa vi ska skriva resten.</li>
+            <li>Välj vad du vill ändra med elementet, t.ex. "color:" för textens färg.</li>
+            <li>Efter kolon skriver du värdet på textens färg.</li>
+            <li>Nedan ser du hur man gör en röd paragraf!   </li>
+        </ol>
+
+        <p><span class="code">p {color: red;}</span></p>
+
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWPeJNM" data-user="emzb23" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/emzb23/pen/MWPeJNM">
+            Untitled</a> by emzb23 (<a href="https://codepen.io/emzb23">@emzb23</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+    </article>
+
+<!-- FÄRGER -->
+    <article class="fullscreen-section" id="section5">
+        <h2 class="section-header">Färger</h2>
+
+
+        <h3>Hexadecimaler, RGB eller färger rakt upp och ned?</h3>
+
+        <p>Det finns tre sätt att förklara för datorskrället vilken färg vi vill ha. Det vi använt oss av ovan har varit de färger som finns inbyggda inom CSS som "red", "blue" och "green". Jag tar några exempel här under men  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/named-color">här</a>  finns en länk med alla förbestämda färger.</p>
+
+        <a href="https://trycolors.com/">trycolors.com är en sida där du kan blanda till dina egna färger ifall du skolkade i dagis.</a>
+
+        <p>Det roliga med hexadecimaler och RGB är att man kan blanda sina egna färger - nu kommer en repetition av nationella proven i dagis! Blandar man grönt och blått så får du... Turkost, (vilket inte är besläktat med turkisk yoghurt) och blandar man rött med blått får du rosa.</p>
+
+        <table id="colours">
+            <tr>
+                <th>CSS</th>
+                <th>RGB</th>
+                <th>HEX</th>
+            </tr>
+            <tr style="background-color: #000; color: white;">
+                <td>Black</td>
+                <td>rgb(0, 0, 0)</td>
+                <td>#000</td>
+            </tr>
+            <tr style="background-color: #fff; color: #000;">
+                <td>White</td>
+                <td>rgb(255, 255, 255)</td>
+                <td>#FFF</td>
+            </tr>
+            <tr style="background-color: red; color: white;">
+                <td>Red</td>
+                <td>rgb(255, 0, 0)</td>
+                <td>#F00</td>
+            </tr>
+            <tr style="background-color: green; color: white;">
+                <td>Green</td>
+                <td>rgb(0, 255, 0)</td>
+                <td>#0F0</td>
+            </tr>
+            <tr style="background-color: #00F; color: white;">
+                <td>Blue</td>
+                <td>rgb(0, 0, 255)</td>
+                <td>#00F</td>
+            </tr>
+            <tr style="background-color: #0FF; color: black;">
+                <td>Cyan</td>
+                <td>rgb(0, 255, 255)</td>
+                <td>#0FF</td>
+            </tr>
+            <tr style="background-color: #F0F; color: white;">
+                <td>Magenta</td>
+                <td>rgb(255, 0, 255)</td>
+                <td>#F0F</td>
+            </tr>
+            <tr style="background-color: #FF0; color: black;">
+                <td>Yellow</td>
+                <td>rgb(255, 255, 0)</td>
+                <td>#FF0</td>
+            </tr>
+        </table>
+
+            <h4>RGB</h4>
+                <p>Vill man finslipa urvalet lite kan man använda sig utav RGB. RGB är kanske mest känt för "gamerbling", de epilepsiframkallande lamporna som får en datormus att kosta dubbelt. Akronymen står för Red, Blue, Green och likt hexadecimaler får man skriva det i tre högar där varje värde går från 0 till 255. Med RGBA kan man även välja hur genomskinlig färgen ska vara genom att använda ett fjärde värde, synligheten. Man kan se det lite som att du har en burk med rött, grönt och blått plus en burk med vatten som du kan späda ut det med.</p>
+
+            <h4>Hexadecimaler</h4>
+                <p>En vanlig missuppfattning är att hexadecimaler har något med häxkonster att göra. Det är en sanning med modifikation. Allt med datorer är svart magi, men hexadecimaler är i grunden ett "staket" eller för dagens kids "haschtagg" följt av sex siffror eller bokstäver vilka är värden för färg samt färgstyrka.
+                </p>
+
+    </article>
+
+<!-- TYPSNITT -->
+    <article class="fullscreen-section" id="section6">
+        <h2 class="section-header">Typsnitt</h2>
+    
+            <p>Nu när vi lekt runt med färger så kan vi tänka lite på hur texten ska se ut. Standardtypsnittet brukar vara New Times Roman och kommer du till en webbdesignträff med det får du stryk, vilket du förtjänar.</p>
+
+            <p>Precis som med färger lägger man in typsnitten i CSS.</p>
+    
+            <div style="padding: 20px; border: #000 solid 2px; column-count: 2;" class="exempel-text">
+                
+                <p style="font-family: 'Courier New', Courier, monospace;">Courier</p>
+                <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Verdana</p>
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Franklin Gothic</p>
+                <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Trebuchet</p>
+                <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Impact</p>
+                <p style="font-family: cursive;">cursive</p>
+            </div>
+    
+            <p>Tänk på att texten kan se annorlunda ut på olika datorer och skärmar. Vi är även alla olika som människor så en liten text behöver större ögon och vice versa. För att ackommendera behöver vi kanske ändra på storleken. <span style="font-size: 20px;">En 20 pixlar stor text</span> passar kanske de med mindre ögon medans <span style="font-size: 5px;">en text på 5 pixlar</span> passar hybrider mellan myra och människa. Glöm inte att använda semikolon efter varje sak du ändrar.</p>
+    
+            <p>Förutom typsnitt och storlek på texten kan man snygga till den lite med olika. Vill man t.ex. ha kursiv text kan man använda <span class="css-code">"font-style: cursive;</span> och vill man ha understruken text kan man använda <span class="css-code">"text-decoration: underline;</span>.</p>
+    
+            <p>Förr i tiden var det hippt att ha sin text centrerad på hemsidan och ibland kan det vara roligt att ha texten lite hit och dit. Nu kan ni sjunga med:</p>
+    
+            <pre style="text-align: center;">
+                Prästens lilla kråka skulle ut och åka,
+                Ingen hade hon som körde.
+                Än slank hon 
+                <span style="display: block; text-align: right;">dit</span>
+                Och än slank hon 
+                <span style="display: block; text-align: left;">dit</span>
+                Och än slank hon 
+                <span style="display: block; transform: rotate(180deg);">ner i diket!</span>
+            </pre>
+
+    
+    </article>
+
+<!-- MEDIA -->
+    <article class="fullscreen-section" id="section7">
+        <h2 class="section-header">Länkar</h2>
+    
+        <p>
+            Tjusningen med internet är ju att man kan fortsätta spinna på det, och är man en del av det stora spindelnätet är det viktigt att man har trådar till annat innehåll. Text blir ju faktiskt rätt trist efter ett tag. Lite bilder vore väl roligt?
+        </p>    
+
+        <h3>Ankare</h3>
+
+        <p>
+            Elementet <span class="code">&lt;a&gt;</span> som i "anchor" (ankare, inte ankor) berättar att det som komma skall är en så kallad hyperlänk till någon annanstans, och precis som <span class="code">&lt;style&gt;</span> behöver den veta vart man vill komma genom att klicka på den.
+        </p>
+
+        <p>Om din hemsida nu heter index, kan du använda nedanstående för att komma dit.</p>
+
+        <p><span class="code">&lt;a href="index.html"&gt; Min hemsida! &lt;/a&gt;</span></p>
+
+        <h3>Absoluta och relativa länkar</h3>
+        
+        <p>
+    
+            Det finns absoluta och relativa länkar. En absolut länk skickar användaren till en utomstående hemsida medan relativa länkar används för innehåll på samma dator. Prova att göra en ny hemsida och länka till den med <span class="code">&lt;a&gt;</span>.
+        </p>
+
+        <h3>Media</h3>
+        <p>
+            Något som är viktigt på en hemsida är att lägga in massvis med bilder i olika storlekar och format. Blinkande, animerade GIF:ar samt äcklig MIDI-musik som inte går att stänga av är klassiker. Men vi nöjer oss med en bild tills vidare. För att just detta experiment ska fungera behöver du lägga en bild i <em>samma mapp som din hemsida.</em> Det kan vara vilken bild som helst! Om du inte har någon bild kan du istället länka till en utomstående via url.
+        </p>
+
+        <p>
+            Via <span class="code">&lt;img&gt;</span> kan vi få samma resultat som med <span class="code">&lt;a&gt;</span> men för en bild istället för text. Döp om din bild till "bild.png" utan citattecken och länka till den genom nedanstående.
+        </p>
+
+        <p><span class="code">&lt;img src="bild.png" alt="bild"&gt;</span></p>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YzJZpPN" data-user="emzb23" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/emzb23/pen/YzJZpPN">
+            Untitled</a> by emzb23 (<a href="https://codepen.io/emzb23">@emzb23</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+    </article> 
+
+
+
+</main>
+    
+    <!-- SCRIPT -->
+        <script>
+let mainNav = document.getElementById("js-menu");
+let navBarToggle = document.getElementById("js-navbar-toggle");
+
+navBarToggle.addEventListener("click", function() {
+mainNav.classList.toggle("active");
+});
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+        </script>
+
+    <footer>
+
+        <section>
+            <h3 id="footer-h3">Info om mig</h3>
+            <p>Jag heter Emelie och deltar i daglig verksamhet på Wigénshuset. Eftersom jag saknar något liv så hänger jag mina dagar till att koda hemsidor. Detta är mitt första projekt så ha lite tålamod och sänk standarden till minus.</p>
+        </section>
+
+        <ul>
+            <h3 id="footer-h3">Länkar</h3>
+            <li><a href="https://xn--dagligverksamhettrans-c3b.se/">Dagliga verksamhetens hemsida</a></li>
+            <li><a href="https://www.w3schools.com/html/default.asp">Mer info om HTML</a></li>
+            <li><a href="https://xn--dagligverksamhettrans-c3b.se/solsidan-3/">Solsidan</a></li>
+        </ul>
+
+    </footer>
+
+<div id="copr">
+    © 2023 <br>
+    Ikoner från <a href="https://icons8.com/">icons8.com</a> <br>
+    Bakgrunder från <a href="https://unsplash.com/">unsplash.com</a>
+</div>
+</div>
+</body>
+</html>
