@@ -171,7 +171,7 @@
     .info-card-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         row-gap: 2em;
         column-gap: 2em;
     }
