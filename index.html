@@ -4,89 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALL-TEST</title>
+    <title>HTML för alla</title>
     <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="main.js"></script>
 </head>
-<body>
-    <div class="bgimage">
+<body class="bgimage">
 
-    <!-- RESPONSIVE NAV -->
-    <nav class="navbar">
-        <img id="homeicon" src="img/homeicon.png" style="height: 35px" alt="hem">
-        <span class="navbar-toggle" id="js-navbar-toggle">&equiv;</span>
-        <ul class="main-nav" id="js-menu">
-            <li><a class="nav-links" href="#">Start</a></li>
-            <li><a class="nav-links" href="#section1">HTML intro</a></li>
-            <li><a class="nav-links" href="#section2">Grunder</a></li>
-            <li><a class="nav-links" href="#section3">Text</a></li>
-            <li><a class="nav-links" href="#section4">CSS</a></li>
-            <li><a class="nav-links" href="#section5">Färger</a></li>
-            <li><a class="nav-links" href="#section6">Typsnitt</a></li>
-            <li><a class="nav-links" href="#section7">Länkar</a></li>
-        </ul>
-    </nav>
+<!-- RESPONSIVE NAV -->
+<nav class="navbar">
+    <img id="homeicon" src="img/homeicon.png" style="height: 35px" alt="hem">
+    <span class="navbar-toggle" id="js-navbar-toggle">&equiv;</span>
+    <ul class="main-nav" id="js-menu">
+        <li><a class="nav-links" href="#">Start</a></li>
+        <li><a class="nav-links" href="#section1">HTML intro</a></li>
+        <li><a class="nav-links" href="#section2">Grunder</a></li>
+        <li><a class="nav-links" href="#section3">Text</a></li>
+        <li><a class="nav-links" href="#section4">CSS</a></li>
+        <li><a class="nav-links" href="#section5">Färger</a></li>
+        <li><a class="nav-links" href="#section6">Typsnitt</a></li>
+        <li><a class="nav-links" href="#section7">Länkar</a></li>
+    </ul>
+</nav>
 
-    <!-- HEADER -->
-
-    <div id="div-container">
-        <div class="header-container">
-            <header><h1>HTML för alla</h1></header>
-            <span>Välkommen till Emelies fantastiska hemsida, nu med HTML-handledning för nybörjare!</span>
+<!-- HEADER -->
+    
+<header>
+    <div class="intro-container">
+        <h1>HTML för alla</h1>
+        <span>Välkommen till Emelies fantastiska hemsida, nu med HTML-handledning för nybörjare!</span>
+    </div>
+    
+    <div class="info-card-container">
+        <div class="info-card">
+            <h4>GÖR EN EGEN HEMSIDA!</h4>
+            <p>En nybörjarhandledning till HTML.</p>
         </div>
-        
-        <div class="info-card-container2">
-            <div class="info-card2">
-                <h4>GÖR EN EGEN HEMSIDA!</h4>
-                <p>En nybörjarhandledning till HTML.</p>
-            </div>
-            <div class="info-card2">
-                <h4>DATORTIPS</h4>
-                <p>Blir inte arg, datorn gör sitt bästa!</p>
-            </div>
-            <div class="info-card2">
-                <h4>BLOGG</h4>
-                <p>Min personliga blogg om allt möjligt.</p>
-            </div>
+        <div class="info-card">
+            <h4>DATORTIPS</h4>
+            <p>Blir inte arg, datorn gör sitt bästa!</p>
+        </div>
+        <div class="info-card">
+            <h4>BLOGG</h4>
+            <p>Min personliga blogg om allt möjligt.</p>
         </div>
     </div>
+</header>
 
 
-    <main>
+
+<main>
         
-    <!-- INTRO -->
-        <article class="fullscreen-section" id="section1">
-            <h2 class="section-header">Intro till HTML</h2>
+<!-- INTRO -->
+    <article class="fullscreen-section" id="section1">
+        <h2 class="section-header">Intro till HTML</h2>
+        
+        <p>
+            Välkommen in i internetlianernas värld. HTML står för Hyper Text Markup Language och används för att strukturera hemsidor på ett sätt som både människor och datorer kan komma överens om. 
             
-            <p>
-                Välkommen in i internetlianernas värld. HTML står för Hyper Text Markup Language och används för att strukturera hemsidor på ett sätt som både människor och datorer kan komma överens om. 
-                
-                Genom detta språk kan vi förklara hur webbläsaren ska tyda text vi skriver.
-                
-                I princip allt du gör online är baserat på HTML på ett eller annat sätt. 
-            </p>
+            Genom detta språk kan vi förklara hur webbläsaren ska tyda text vi skriver.
+            
+            I princip allt du gör online är baserat på HTML på ett eller annat sätt. 
+        </p>
 
-            <h3>Historia</h3>
-            <p>
-                Efter att en forskare vid namn Tim Berners-Lee skapade den första hemsidan 1989 kunde man äntligen länka ihop hemsidor med andra och när internet blev tillgängligt för allmänheten i mitten av nittiotalet exploderade intresset för att skapa egna hemsidor. 1998 bestämde regeringen att folk skulle sluta låna hem och skabba ner arbetsplatsens datorer. Efter att i gymnasiet ha praktiserat på ett företag som städade leasade datorer förstår jag dem. Nu skulle man istället ha en dator hemma. Under de tre kommande åren adopteras nästan en miljon datorer. Självklart missbrukas detta genom kryphål, men det är kanske tack vare detta halva landets befolkning använde nätet vid mellenieskiftet.
-            </p>
-    
-            <h3>Webbläsare, textredigerare och filtyper</h3>
-            <p>
-                Mycket av det vi ska arbeta med nu kommer ligga lokalt, alltså bara på din dator. I demonstrativt syft kommer jag skriva själva koden för hemsidan i en så kallad textredigerare, t.ex. Notepad++ som ska finnas färdiga på våra datorer här på Mediagruppen. 
-            </p>
+        <h3>Historia</h3>
+        <p>
+            Efter att en forskare vid namn Tim Berners-Lee skapade den första hemsidan 1989 kunde man äntligen länka ihop hemsidor med andra och när internet blev tillgängligt för allmänheten i mitten av nittiotalet exploderade intresset för att skapa egna hemsidor. 1998 bestämde regeringen att folk skulle sluta låna hem och skabba ner arbetsplatsens datorer. Efter att i gymnasiet ha praktiserat på ett företag som städade leasade datorer förstår jag dem. Nu skulle man istället ha en dator hemma. Under de tre kommande åren adopteras nästan en miljon datorer. Självklart missbrukas detta genom kryphål, men det är kanske tack vare detta halva landets befolkning använde nätet vid mellenieskiftet.
+        </p>
 
-            <div class="repet">
-                <h5>I denna kursen ska vi lära oss:</h5>
-                <ul>
-                    <li>Om olika webbläsare och textredigerare</li>
-                    <li>Att skriva en enkel, lokal hemsida</li>
-                    <li>Färglägga och länka</li>
-                </ul>
-            </div>
-        </article>
+        <h3>Webbläsare, textredigerare och filtyper</h3>
+        <p>
+            Mycket av det vi ska arbeta med nu kommer ligga lokalt, alltså bara på din dator. I demonstrativt syft kommer jag skriva själva koden för hemsidan i en så kallad textredigerare, t.ex. Visual Studio Code, Codepen eller Notepad++ som ska finnas färdiga på våra datorer här på Mediagruppen. 
+        </p>
+
+        <div class="repet">
+            <h5>I denna kursen ska vi lära oss:</h5>
+            <ul>
+                <li>Om olika webbläsare och textredigerare</li>
+                <li>Att skriva en enkel, lokal hemsida</li>
+                <li>Färglägga och länka</li>
+            </ul>
+        </div>
+    </article>
 
 <!-- SECTION 2 -->
     <article class="fullscreen-section" id="section2">
@@ -202,7 +202,7 @@
 
         <p>Det roliga med hexadecimaler och RGB är att man kan blanda sina egna färger - nu kommer en repetition av nationella proven i dagis! Blandar man grönt och blått så får du... Turkost, (vilket inte är besläktat med turkisk yoghurt) och blandar man rött med blått får du rosa.</p>
 
-        <table id="colours">
+        <table class="table-index">
             <tr>
                 <th>CSS</th>
                 <th>RGB</th>
@@ -260,12 +260,12 @@
     </article>
 
 <!-- TYPSNITT -->
-    <article class="fullscreen-section" id="section6">
+    <article class="fullscreen-section flex-col-spbe" id="section6">
         <h2 class="section-header">Typsnitt</h2>
     
             <p>Nu när vi lekt runt med färger så kan vi tänka lite på hur texten ska se ut. Standardtypsnittet brukar vara New Times Roman och kommer du till en webbdesignträff med det får du stryk, vilket du förtjänar.</p>
 
-            <p>Precis som med färger lägger man in typsnitten i CSS.</p>
+            <p>Precis som med färger lägger man in typsnitten i CSS med <span class="css-code">"font-family"</span> följt av typsnittet du vill ha.</p>
     
             <div style="padding: 20px; border: #000 solid 2px; column-count: 2;" class="exempel-text">
                 
@@ -283,16 +283,16 @@
     
             <p>Förr i tiden var det hippt att ha sin text centrerad på hemsidan och ibland kan det vara roligt att ha texten lite hit och dit. Nu kan ni sjunga med:</p>
     
-            <pre style="text-align: center;">
-                Prästens lilla kråka skulle ut och åka,
-                Ingen hade hon som körde.
-                Än slank hon 
-                <span style="display: block; text-align: right;">dit</span>
-                Och än slank hon 
-                <span style="display: block; text-align: left;">dit</span>
-                Och än slank hon 
-                <span style="display: block; transform: rotate(180deg);">ner i diket!</span>
-            </pre>
+<pre>
+    Prästens lilla kråka skulle ut och åka,
+    Ingen hade hon som körde.
+    Än slank hon 
+    <span style="display: block; text-align: right;">dit</span>
+    Och än slank hon 
+    <span style="display: block; text-align: left;">dit</span>
+    Och än slank hon 
+    <span style="display: block; transform: rotate(180deg);">ner i diket!</span>
+</pre>
 
     
     </article>
@@ -339,7 +339,65 @@
           </p>
     </article> 
 
+<!-- LATHUND -->
+    <article class="fullscreen-section">
+        <h2 class="section-header">Egenskaper i CSS</h2>
 
+        <table id="css-tabell">
+            <tr>
+                <th>Egenskap</th>
+                <th>Vad händer</th>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>Textfärg</td>
+            </tr>
+            <tr>
+                <td>background-color</td>
+                <td>Bakgrundsfärg</td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>Bredd</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>Ram</td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>Stoppning inom element</td>
+            </tr>
+            <tr>
+                <td>margin</td>
+                <td>Marginal runt elementet</td>
+            </tr>
+            <tr>
+                <td>text-align</td>
+                <td>Textjustering, t.ex. center</td>
+            </tr>
+            <tr>
+                <td>font-size</td>
+                <td>Textstorlek</td>
+            </tr>
+            <tr>
+                <td>font-family</td>
+                <td>Typsnitt</td>
+            </tr>
+            <tr>
+                <td>font-weight</td>
+                <td>Tjocklek på texten</td>
+            </tr>
+            <tr>
+                <td>display: inline-block</td>
+                <td>Gör själva "rutan" lika stor som elementet</td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td>Flyttar ett element till höger eller vänster</td>
+            </tr>
+        </table>
+    </article>
 
 </main>
     
@@ -352,57 +410,28 @@ navBarToggle.addEventListener("click", function() {
 mainNav.classList.toggle("active");
 });
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("slide");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
         </script>
 
-    <footer>
+<footer>
 
-        <section>
-            <h3 id="footer-h3">Info om mig</h3>
-            <p>Jag heter Emelie och deltar i daglig verksamhet på Wigénshuset. Eftersom jag saknar något liv så hänger jag mina dagar till att koda hemsidor. Detta är mitt första projekt så ha lite tålamod och sänk standarden till minus.</p>
-        </section>
+    <section>
+        <h3 id="footer-h3">Info om mig</h3>
+        <p>Jag heter Emelie och deltar i daglig verksamhet på Wigénshuset. Eftersom jag saknar något liv så hänger jag mina dagar till att koda hemsidor. Detta är mitt första projekt så ha lite tålamod och sänk standarden till minus.</p>
+    </section>
 
-        <ul>
-            <h3 id="footer-h3">Länkar</h3>
-            <li><a href="https://xn--dagligverksamhettrans-c3b.se/">Dagliga verksamhetens hemsida</a></li>
-            <li><a href="https://www.w3schools.com/html/default.asp">Mer info om HTML</a></li>
-            <li><a href="https://xn--dagligverksamhettrans-c3b.se/solsidan-3/">Solsidan</a></li>
-        </ul>
+    <ul>
+        <h3 id="footer-h3">Länkar</h3>
+        <li><a href="https://xn--dagligverksamhettrans-c3b.se/">Dagliga verksamhetens hemsida</a></li>
+        <li><a href="https://www.w3schools.com/html/default.asp">Mer info om HTML</a></li>
+        <li><a href="https://xn--dagligverksamhettrans-c3b.se/solsidan-3/">Solsidan</a></li>
+    </ul>
 
-    </footer>
+</footer>
 
 <div id="copr">
     © 2023 <br>
     Ikoner från <a href="https://icons8.com/">icons8.com</a> <br>
     Bakgrunder från <a href="https://unsplash.com/">unsplash.com</a>
-</div>
 </div>
 </body>
 </html>
